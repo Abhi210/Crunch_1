@@ -1,0 +1,39 @@
+# Competition data (not redistributable)
+data/
+
+# Model checkpoints (too large for GitHub)
+resources/*.pt
+resources/**/*.pt
+*.pt
+
+# Large embedding matrices (regenerate via extract_foundation_embeddings.py)
+*.npy
+resources/embeddings/scgpt/
+resources/embeddings/geneformer/
+
+# Prediction outputs
+outputs/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment
+.env
+.venv
+env/
+venv/
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
